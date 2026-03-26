@@ -3,6 +3,7 @@
 
 int main()
 {
-    printf("Hello world!\n");
+    int favNum = 90;
+    printf("My Favorite %s is %d", "number", favNum);
     return 0;
 }
