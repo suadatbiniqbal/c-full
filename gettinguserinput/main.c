@@ -3,8 +3,8 @@
 
 int main()
 {
-    int age;
-    /*getting user input*/
+    /*int age;
+
     printf("enter your age:\n");
     scanf("%d", &age);
 
@@ -13,7 +13,13 @@ int main()
     scanf("%lf", &gpa);
 
     printf("Your Gpa Is %f\n", gpa);
-    printf("You Are %d years old ", age);
+    printf("You Are %d years old\n ", age);
 
-    return 0;
+   /*entering phrase*/
+
+ char name[20];
+ printf("Enter Your Name:");
+ fgets(name, 20, stdin);
+ printf("Your Name is %s asdf", name);
+ return 0;
 }
