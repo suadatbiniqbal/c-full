@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1774593834 source:/home/vetra/Desktop/c-full/functions/main.c
+	<stdio.h>
+	<stdlib.h>
+
