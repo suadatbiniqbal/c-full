@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — Your SaaS</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter", sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #0f172a, #020617);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            padding: 40px 30px;
+            border-radius: 16px;
+            width: 340px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        label {
+            color: #cbd5f5;
+            font-size: 13px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 11px;
+            margin: 8px 0 16px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            background: #1e293b;
+            color: white;
+            font-size: 14px;
+        }
+
+        input::placeholder {
+            color: #94a3b8;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 11px;
+            border-radius: 8px;
+            border: none;
+            background: #3b82f6;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+            margin-top: 5px;
+        }
+
+        .btn:hover {
+            background: #2563eb;
+        }
+
+        .remember {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            color: #cbd5f5;
+            margin-top: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 18px;
+            font-size: 13px;
+            color: #94a3b8;
+        }
+
+        .footer a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Login</h1>
+
+        <form>
+            <label>Username</label>
+            <input type="text" placeholder="Enter your username" required>
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password" required>
+
+            <button class="btn">Login</button>
+
+            <div class="remember">
+                <input type="checkbox">
+                <span>Remember me</span>
+            </div>
+        </form>
+
+        <div class="footer">
+            Don’t have an account? <a href="#">Sign up</a>
+        </div>
+    </div>
+
+</body>
+</html>
